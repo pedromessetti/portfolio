@@ -313,9 +313,6 @@ nav .menu li a:active {
     color: #6948ff;
 }
 
-.pong {
-    display: none;
-}
 
 /* ----- Professional Skills Section -----*/
 
@@ -328,8 +325,9 @@ nav .menu li a:active {
 
 .skills h1 {
     text-align: center;
-    padding-top: 50px 0;
+    padding: 50px 0;
 }
+
 
 .skills-content {
     display: grid;
@@ -349,7 +347,7 @@ nav .menu li a:active {
     padding-left: 12px;
     cursor: pointer;
 }
-
+    
 .pong {
     padding-top: 50px;
     text-decoration: none;
