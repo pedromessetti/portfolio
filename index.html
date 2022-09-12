@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Messetti | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!----- Navegation Bar ----->
+    <nav>
+        <div class="max-width">
+            <div class="portfolio"><a href="#">Port<span>folio</span></a></div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#my-projects">My Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+    <!---- Home Page Section ----->
+        <section class="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <img src="img/eu.png" alt="Pedro Messetti - Profile Picture" class="profile-pic">
+                    <p class="home-text">Hi! I am</p>
+                    <p class="home-text name">Pedro Messetti</p>
+                    <p class="home-text profession" id="last-text"></p>
+                    <a target="_blank" rel="external" href="https://www.linkedin.com/in/pedro-messetti-a5435723a" class="main-text">Linkedin</a>
+                </div>
+            </div>
+        </section>
+        <!----- About Me Section ----->
+        <section class="about-me" id="about-me">
+            <div class="max-width">
+                <h1 class="title">About Me</h1>
+                <div class="about-me-content">
+                    <img src="img/notebook.png" alt="Notebook and Smartphone">
+                    <p class="description"> &lt;<span>p</span>&gt; My passion for technology in childhood and today I can say that I am a Front-End developer with knowledge and passionate about what I do. I am a very ambitious professional, I like challenges and developing good solutions to bigger problems. I work very well in a team and I am a very organized person. I like to be in constant development, learning more about new technologies, new frameworks, databases and programming languages. I consider myself a very hardworking and dedicated person, when I go after a goal I don't stop until I reach it. For these reasons I think I will be an ideal professional for what you are looking for, after all, you came here looking for that, right? &lt;<span>/p</span>&gt;</p>
+                    <a href="downloads/CV_Pedro_Messetti.pdf" download="CV_Pedro_Messetti.pdf">Download my CV</a>
+                </div>
+            </div>
+        </section>
+        <!-----My Projects Section ----->
+        <section class="my-projects" id="my-projects">
+            <div class="max-width">
+                <h1 class="title">My Projects</h1>
+                <div class="container" id="container">
+                    <button class="arrow-left control" aria-label="Previous Image"><ion-icon name="chevron-back-outline"></ion-icon></button>
+                    <button class="arrow-right control" aria-label="Next Image"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+                    <div class="gallery-wrapper">
+                        <div class="gallery">
+                            <a target="_blank" rel="external" href="https://pedromessetti.github.io/alura-plus/"><img src="img/alura-plus.jpg" alt="Home Page Alura Plus" class="item current-item"></a>
+                            <a target="_blank" rel="external" href="https://pedromessetti.github.io/carlinhos-varela-barbeiros/"><img src="img/carlinhos.jpg" alt="Home Page Carlinhos Varela Barbeiros" class="item current-item"></a>
+                            <a target="_blank" rel="external" href="https://pedromessetti.github.io/interactive-keyboard/"><img src="img/interactive-keyboard.jpg" alt="Home Page interactive Keyboard" class="item current-item"></a>
+                            <a target="_blank" rel="external" href="https://pedromessetti.github.io/robotron-2000/"><img src="img/robotron-2000.jpg" alt="Home Page Robotron 2000" class="item current-item"></a>
+                            <a href="#my-projects"><img src="img/work-in-progress.jpg" alt="Work In Progress Image" class="item current-item"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pong">
+                    <a id="open-pong">Click here for play one of the most classic games ever</a>
+                    <iframe src="pong/index.html" frameborder="0"></iframe>
+                </div>
+                <div class="github">
+                    <a target="_blank" rel="external" href="https://github.com/pedromessetti"><ion-icon name="logo-github"></ion-icon>Check my GitHub repository</a>
+                </div>
+            </div>
+        </section>
+        <!----- Professional Skills Section ----->
+        <section class="skills" id="skills">
+            <div class="max-width">
+                <h1 class="title">Professional Skills</h1>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
