@@ -328,10 +328,39 @@ nav .menu li a:active {
 
 .skills h1 {
     text-align: center;
-    padding-top: 60px;
+    padding-top: 50px;
+}
+
+.skills-content {
+    display: grid;
+    grid-template-columns: minmax(0, 50px) 1fr minmax(0, 50px) 1fr minmax(0, 50px) 1fr;
+    row-gap: 80px;
+    margin-left: 50px;
+    align-items: center;
+    font-size: 29px;
+}
+
+.skills-content ion-icon {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.skills-content p {
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+.pong {
+    padding-top: 50px;
+    text-decoration: none;
+}
+
+#open-pong {
+    color: #eeeeee;
 }
 
 iframe {
+    display: none;
     width: 630px;
     height: 450px;
 }
