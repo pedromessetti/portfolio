@@ -4,8 +4,8 @@ let yBolinha = 200
 let diametro = 15
 let raio = diametro/2
 //Velocidade da Bolinha
-let velocidadeXBolinha = 6
-let velocidadeYBolinha = 6
+let velocidadeXBolinha = 0
+let velocidadeYBolinha = 0
 
 //Variáveis da Raquete 1
 let comprimentoRaquete = 10
@@ -53,6 +53,11 @@ function mostraRaquete(x, y) {
 }
 
 //Funções de Movimento
+function mouseClicked() {
+  velocidadeXBolinha = 6
+  velocidadeYBolinha = 6
+}
+
 function movimentaBolinha() {
   xBolinha += velocidadeXBolinha
   yBolinha += velocidadeYBolinha

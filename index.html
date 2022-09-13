@@ -20,17 +20,28 @@
         <div class="max-width">
             <div class="portfolio"><a href="#">Port<span>folio</span></a></div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#my-projects">My Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <div class="left-bar">
+        <div class="max-width">
+            <ul class="left-menu">
+                <li><a target="_blank" rel="external" id="linkedin" href="https://www.linkedin.com/in/pedro-messetti-a5435723a/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a target="_blank" rel="external" id="github" href="https://github.com/pedromessetti"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a target="_blank" rel="external" id="whatsapp" href="https://wa.me/351924686213"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                <li><a target="_blank" rel="external" id="instagram" href="https://www.instagram.com/pedromessetti/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#home" class="back-home"><ion-icon name="chevron-up-outline"></ion-icon></a></li>
+            </ul>
+        </div>
+    </div>
     <main>
     <!---- Home Page Section ----->
-        <section class="home">
+        <section class="home" id="home">
             <div class="max-width">
                 <div class="home-content">
                     <img src="img/eu.png" alt="Pedro Messetti - Profile Picture" class="profile-pic">
@@ -82,25 +93,50 @@
         <!----- Professional Skills Section ----->
         <section class="skills" id="skills">
             <div class="max-width">
-                <h1 class="title">Professional Skills</h1>
+                <h1 class="title" id="title-skills">Professional Skills</h1>
                 <div class="skills-content">
-                    <ion-icon name="logo-html5"></ion-icon><p>HTML 5</p>
-                    <ion-icon name="logo-css3"></ion-icon><p>CSS 3</p>
-                    <ion-icon name="logo-javascript"></ion-icon><p>JavaScript</p>
-                    <ion-icon name="logo-python"></ion-icon><p>Python 3</p>
-                    <ion-icon name="logo-angular"></ion-icon><p>Angular JS</p>
-                    <ion-icon name="logo-figma"></ion-icon><p>Figma</p>
-                    <ion-icon name="logo-nodejs"></ion-icon><p>Node JS</p>
-                    <ion-icon name="logo-sass"></ion-icon><p>Sass</p>
-                    <ion-icon name="logo-tux"></ion-icon><p>Linux</p>
+                    <div class="skill html">
+                        <ion-icon name="logo-html5"></ion-icon><p>HTML 5</p>
+                    </div>
+                    <div class="skill css">
+                        <ion-icon name="logo-css3"></ion-icon><p>CSS 3</p>
+                    </div>
+                    <div class="skill js">
+                        <ion-icon name="logo-javascript"></ion-icon><p>JavaScript</p>
+                    </div>
+                    <div class="skill python">
+                        <ion-icon name="logo-python"></ion-icon><p>Python 3</p>
+                    </div>
+                    <div class="skill angular">
+                        <ion-icon name="logo-angular"></ion-icon><p>Angular JS</p>
+                    </div>
+                    <div class="skill figma">
+                        <ion-icon name="logo-figma"></ion-icon><p>Figma</p>
+                    </div>
+                    <div class="skill node">
+                        <ion-icon name="logo-nodejs"></ion-icon><p>Node JS</p>
+                    </div>
+                    <div class="skill sass">
+                        <ion-icon name="logo-sass"></ion-icon><p>Sass</p>
+                    </div>
+                    <div class="skill linux" id="begin-pong">
+                        <ion-icon name="logo-tux"></ion-icon><p>Linux</p>
+                    </div>
                 </div>
                 <div class="pong">
-                    <a id="open-pong" href="#open-pong">* Click here for play one of the most classic games ever</a>
-                    <iframe src="pong/index.html" frameborder="0"></iframe>
+                    <a id="open-pong" href="#begin-pong">* Click here for play one of the most classic games ever</a>
+                    <a href="#skills"><ion-icon name="close-outline" id="close-button"></ion-icon></a>
+                    <iframe src="pong/index.html" id="pong-game" frameborder="0"></iframe>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <p><ion-icon name="mail-outline"></ion-icon>pedromessetti@gmail.com</p>
+        <p><ion-icon name="call-outline"></ion-icon>+351 924 686 213</p>
+        <p>&#169; Developed by: Pedro Messetti</p>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>

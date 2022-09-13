@@ -86,7 +86,7 @@ nav .menu li {
 nav .menu li a {
     color: #eeeeee;
     font-size: 20px;
-    margin-left: 30px;
+    margin-left: 40px;
     transition: 300ms;
 }
 
@@ -331,11 +331,14 @@ nav .menu li a:active {
 
 .skills-content {
     display: grid;
-    grid-template-columns: minmax(0, 50px) 1fr minmax(0, 50px) 1fr minmax(0, 50px) 1fr;
-    row-gap: 80px;
-    margin-left: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 75px;
+    font-size: 35px;
+}
+
+.skill {
+    display: flex;
     align-items: center;
-    font-size: 29px;
 }
 
 .skills-content ion-icon {
@@ -349,16 +352,107 @@ nav .menu li a:active {
 }
     
 .pong {
-    padding-top: 50px;
+    margin-top: 50px;
     text-decoration: none;
 }
 
 #open-pong {
     color: #eeeeee;
+    transition: 500ms;
+}
+
+#open-pong:hover {
+    color: #6948ff;
+}
+
+#close-button {
+    display: none;
+    font-size: 30px;
+    text-decoration: none;
+    color: #eeeeee;
+    float: right;
+    margin: 20px 125px 0;
+    cursor: pointer;
+}
+
+#pong-game {
+    display: none;
+    margin: 50px auto;
 }
 
 iframe {
-    display: none;
     width: 630px;
     height: 450px;
+}
+
+
+/* ----- Left Bar ------ */
+
+.left-bar {
+    position: fixed;
+    right: 20px;
+    padding: 48vh 0;
+}
+
+.left-bar .max-width {
+    padding: 0;
+}
+
+.left-menu {
+    list-style: none;
+    font-size: 40px;
+}
+
+.left-menu li {
+    padding-bottom: 20px;
+}
+
+.left-menu a {
+    text-decoration: none;
+    color: #eeeeee;
+    transition: 500ms;
+}
+
+.back-home {
+    background: #8a8a8a5d;
+    border-radius: 5px;
+}
+
+.back-home:hover {
+    background: #a8a8a85d;
+    color: #cccccc;
+}
+
+#linkedin:hover {
+    color: #0a66c2;
+}
+
+#github:hover {
+    color: #3e4247;
+}
+
+#whatsapp:hover {
+    color: #0dc143;
+}
+
+#instagram:hover {
+    color: #9e03d4;
+}
+
+
+/* ----- Footer ----- */
+
+footer {
+    height: 10vh;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    padding: 5px 20px;
+    align-items: center;
+}
+
+footer ion-icon {
+    padding-right: 10px;
 }
