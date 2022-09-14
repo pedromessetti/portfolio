@@ -20,6 +20,7 @@ writer(profession, "Front-End Developer" , 0)
 
 //My Projects Gallery
 
+
 const controls = document.querySelectorAll('.control')
 let currentItem = 0
 const items = document.querySelectorAll('.item')
@@ -57,29 +58,47 @@ controls.forEach((control) => {
 })
 
 
-//Show content of the professional skills
+//Show content of the Professional Skills
+
 
 const skills = document.querySelectorAll('.skill')
 const title = document.getElementById('title-skills')
+const progressBar = document.querySelector('.progress-bar')
+const level = document.querySelector('.interior')
+const percentage = ['93%', '87%', '81%', '76%', '56%', '45%', '84%', '74%', '63%']
+const percentageP = document.querySelector('.percentage')
 
-skills.forEach((skill) => {
-    skill.addEventListener("mouseover", changeTitle)
-})
+for(let counter = 0; counter < skills.length; counter++) {
+    const skill = skills[counter];
+    const skillPercentage = percentage[counter]
 
-skills.forEach((skill) => {
-    skill.addEventListener("mouseout", normalTitle)
-})
+    skill.onmouseover = function () {
+        changeTitle(skillPercentage)
+        level.setAttribute("style", `width: ${skillPercentage}`)
+    }
+    
+    skill.onmouseout = function () {
+        normalTitle()
+    }
+}
 
-function changeTitle() {
-    title.innerHTML = "Skills Level:"
+function changeTitle(skillPercentage) {
+    title.innerHTML = "Skill Level"
+    progressBar.style.visibility = "visible"
+    percentageP.style.visibility = "visible"
+    percentageP.innerHTML = `${skillPercentage}`
+
 }
 
 function normalTitle() {
-    title.innerText = "Professionals Skills"
+    title.innerHTML = "Professionals Skills"
+    progressBar.style.visibility = "hidden"
+    percentageP.style.visibility = "hidden"
 }
 
 
-//----- Open and close pong game -----
+//Open and close Pong Same
+
 
 const openPong = document.getElementById("open-pong")
 const background = document.querySelector(".skills")

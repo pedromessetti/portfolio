@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Messetti | Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/icon.ico">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -27,10 +27,10 @@
             </ul>
         </div>
     </nav>
-
-    <div class="left-bar">
+    <!----- Side Bar ----->
+    <div class="side-bar">
         <div class="max-width">
-            <ul class="left-menu">
+            <ul class="side-menu">
                 <li><a target="_blank" rel="external" id="linkedin" href="https://www.linkedin.com/in/pedro-messetti-a5435723a/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
                 <li><a target="_blank" rel="external" id="github" href="https://github.com/pedromessetti"><ion-icon name="logo-github"></ion-icon></a></li>
                 <li><a target="_blank" rel="external" id="whatsapp" href="https://wa.me/351924686213"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
@@ -59,7 +59,7 @@
                 <div class="about-me-content">
                     <div class="notebook-screen">
                         <img src="img/notebook.png" alt="Notebook Image" class="notebook">
-                        <img src="img/gif.gif" alt="" class="gif">
+                        <img src="img/portfolio.gif" alt="" class="gif">
                     </div> 
                     <div class="description">
                         <p class="description"> &lt;<span>p</span>&gt; My passion for technology started in childhood and today I can say that I am a Front-End developer with knowledge and passionate about what I do. I am a very ambitious professional, I like challenges and developing good solutions to bigger problems. I work very well in a team and I am a very organized person. I like to be in constant development, learning more about new technologies, new frameworks, databases and programming languages. I consider myself a very hardworking and dedicated person, when I go after a goal I don't stop until I reach it. For these reasons I think I will be an ideal professional for what you are looking for, after all, you came here looking for that, right? &lt;<span>/p</span>&gt;</p>
@@ -72,6 +72,7 @@
         <section class="my-projects" id="my-projects">
             <div class="max-width">
                 <h1 class="title">My Projects</h1>
+                <!----- Gallery ----->
                 <div class="container" id="container">
                     <button class="arrow-left control" aria-label="Previous Image"><ion-icon name="chevron-back-outline"></ion-icon></button>
                     <button class="arrow-right control" aria-label="Next Image"><ion-icon name="chevron-forward-outline"></ion-icon></button>
@@ -94,35 +95,40 @@
         <section class="skills" id="skills">
             <div class="max-width">
                 <h1 class="title" id="title-skills">Professional Skills</h1>
+                <p class="percentage"></p>
+                <div class="progress-bar">
+                    <div class="interior"></div>
+                </div>
                 <div class="skills-content">
                     <div class="skill html">
-                        <ion-icon name="logo-html5"></ion-icon><p>HTML 5</p>
+                        <img src="img/html5.png" alt="Logo HTML 5"><p>HTML 5</p>
                     </div>
                     <div class="skill css">
-                        <ion-icon name="logo-css3"></ion-icon><p>CSS 3</p>
+                        <img src="img/css3.png" alt="Logo CSS 3"><p>CSS 3</p>
                     </div>
                     <div class="skill js">
-                        <ion-icon name="logo-javascript"></ion-icon><p>JavaScript</p>
+                        <img src="img/js.png" alt="Logo JavaScript"><p>JavaScript</p>
                     </div>
                     <div class="skill python">
-                        <ion-icon name="logo-python"></ion-icon><p>Python 3</p>
+                        <img src="img/python.png" alt="Logo Python"><p>Python 3</p>
                     </div>
                     <div class="skill angular">
-                        <ion-icon name="logo-angular"></ion-icon><p>Angular JS</p>
+                        <img src="img/angular.png" alt="Logo Angular"><p>Angular JS</p>
+                    </div>
+                    <div class="skill react">
+                        <img src="img/react.png" alt="Logo Reac"><p>React JS</p>
                     </div>
                     <div class="skill figma">
-                        <ion-icon name="logo-figma"></ion-icon><p>Figma</p>
+                        <img src="img/figma.png" alt="Logo Figma"><p>Figma</p>
                     </div>
-                    <div class="skill node">
-                        <ion-icon name="logo-nodejs"></ion-icon><p>Node JS</p>
+                    <div class="skill gimp">
+                        <img src="img/gimp.png" alt="Logo GIMP"><p>GIMP</p>
                     </div>
-                    <div class="skill sass">
-                        <ion-icon name="logo-sass"></ion-icon><p>Sass</p>
-                    </div>
-                    <div class="skill linux" id="begin-pong">
-                        <ion-icon name="logo-tux"></ion-icon><p>Linux</p>
+                    <div class="skill git" id="begin-pong">
+                        <img src="img/git.png" alt="Logo Git"><p>Git</p>
                     </div>
                 </div>
+                <!----- Pong Game ----->
                 <div class="pong">
                     <a id="open-pong" href="#begin-pong">* Click here for play one of the most classic games ever</a>
                     <a href="#skills"><ion-icon name="close-outline" id="close-button"></ion-icon></a>
@@ -131,7 +137,7 @@
             </div>
         </section>
     </main>
-
+    <!----- Footer ----->
     <footer>
         <p><ion-icon name="mail-outline"></ion-icon>pedromessetti@gmail.com</p>
         <p><ion-icon name="call-outline"></ion-icon>+351 924 686 213</p>
