@@ -509,3 +509,13 @@ footer p {
 footer ion-icon {
     padding-right: 10px;
 }
+
+
+/* ----- Mobile Responsive ----- */
+
+
+@media screen and (max-width:480px) {
+    body {
+        width: fit-content;
+    }
+}
