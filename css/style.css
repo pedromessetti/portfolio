@@ -508,3 +508,88 @@ footer p {
 footer ion-icon {
     padding-right: 10px;
 }
+
+@media screen and (max-width: 480px){ 
+    body {
+        width: 250px;
+    }
+
+    .max-width {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .side-bar {
+        display: none;
+    }
+
+    .home {
+        font-size: 22px;
+        padding: 10px 0;
+        height: 60vh;
+    }
+
+    .home-text {
+        margin: 10px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .profile-pic {
+        float: none;
+        width: 200px;
+        margin: 16px;
+    }
+
+    .home a {
+        border-radius: 8px;
+        font-size: 22px;
+        padding: 10px 30px;
+        margin: 40px;
+    }
+
+    .about-me {
+        padding: 60px 0;
+    }
+
+    .about-me h1 {
+        padding: 0 40px;
+        text-align: inherit;
+    }
+
+    .about-me-content {
+        display: block;
+    }
+
+    .notebook-screen {
+        padding: 0 10px 70px;
+    }
+
+    .notebook {
+        width: 50%;
+    }
+
+    .gif {
+        width: 170px;
+        height: 105px;
+    }
+
+    .about-me p {
+        font-size: 14px;
+        padding:10px;
+        width: 234px;
+    }
+
+    .about-me a {
+        border-radius: 8px;
+        font-size: 18px;
+        padding: 12px 26px;
+        margin: 16px;
+    }
+}
