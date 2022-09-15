@@ -530,7 +530,7 @@ footer ion-icon {
     .home {
         font-size: 22px;
         padding: 0 18px;
-        height: 60vh;
+        height: 70vh;
     }
 
     .home-text {
@@ -551,15 +551,15 @@ footer ion-icon {
         border-radius: 8px;
         font-size: 22px;
         padding: 10px 30px;
-        margin: 40px;
+        margin: 50px;
     }
 
     .about-me {
-        padding: 60px 0;
+        padding: 50px 0;
     }
 
     .about-me h1 {
-        padding: 0 40px;
+        padding: 0 50px;
         text-align: inherit;
     }
 
@@ -568,7 +568,7 @@ footer ion-icon {
     }
 
     .notebook-screen {
-        padding: 0 10px 70px;
+        padding: 0 20px 70px;
     }
 
     .notebook {
@@ -576,20 +576,20 @@ footer ion-icon {
     }
 
     .gif {
-        width: 170px;
+        width: 166px;
         height: 105px;
     }
 
     .about-me p {
         font-size: 14px;
-        padding:10px;
-        width: 234px;
+        padding:20px;
+        width: 250px;
     }
 
     .about-me a {
         border-radius: 8px;
         font-size: 18px;
         padding: 12px 26px;
-        margin: 16px;
+        margin: 20px;
     }
 }
