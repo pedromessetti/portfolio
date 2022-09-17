@@ -9,7 +9,7 @@
 # Index
 * [Project Description](#description)
 
-* [Project Status](#status-barchart)
+* [Project Status](#barchart-status)
 
 * [Features](#hammer-features)
 
@@ -23,7 +23,7 @@
 # Description
 <p>The purpose of the website is to be an online portfolio where I can promote my projects and show my skills as a Front-End Developer so that companies and other developers can see and analyze.</p>
 
-# Status :bar_chart:
+# :bar_chart: Status
 <p>Version 1.0</p>
 <p>Currently only for desktop devices (min-width: 1024px). We will have more updates in the future for add mobile responsiveness.</p>
 
@@ -44,11 +44,11 @@
 
 ![GIF open and close the pong game inside the website](/img/pong-game.gif)
 
-# Acess the Website
+# :computer: Acess the Website
 
 ![Image of the website home page](/img/banner-portfolio.png)
 
-You can acess the website by following this link:
+You can acess the website by clicking on the link below:
 
 https://pedromessetti.github.io/portfolio/
 
@@ -60,7 +60,7 @@ https://pedromessetti.github.io/portfolio/
 <p>Display flex and grid, animations for items and for mouseover, positions static, fixed, relative and absolute of elements, reset css for browsers, changes in the scroll bar, add smoth scroll behavior, working in progress for add media queries for mobile devices</p>
 
 <img src="img/js.png" width=25px align="center"> **Javascript**
-<p>Functions for: writing, open and close elements, gallery images, show texts and level of skills. Events of: click, mouseenter, mouseout</p>
+<p>Functions for: writing, open and close elements, gallery images, show texts and level of skills. Events of: click, mouseenter, mouseout.</p>
 
 # Author
 | [<img src="img/eu.png" width=115><br><sub>Pedro Vinicius Messetti</sub>](https://github.com/pedromessetti) |
