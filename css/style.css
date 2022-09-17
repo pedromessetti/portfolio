@@ -1,3 +1,10 @@
+@import url(navegation.css);
+@import url(home.css);
+@import url(about-me.css);
+@import url(projects.css);
+@import url(skills.css);
+
+
 /* ----- HTML, Body Tag, Titles Tag and Scrollbar -----*/
 
 
@@ -48,451 +55,15 @@ body {
     font-size: 32px;
 }
 
-
-/*----- Navegation Bar -----*/
-
-
 .max-width {
     max-width: 1020px;
     padding: 0 80px;
     margin: auto;
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    background-color: #57575770;
-    backdrop-filter: blur(10px);
-    padding: 20px 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-nav .max-width {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav .portfolio a{
-    color: #eeeeee;
-    font-weight: 700;
-    font-size: 34px;
-}
-
-nav .portfolio span {
-    color: #6948ff;
-}
-
-nav .menu li {
-    display: inline-block;
-}
-
-nav .menu li a {
-    color: #eeeeee;
-    font-size: 20px;
-    margin-left: 40px;
-    transition: 300ms;
-}
-
-nav .menu li a:hover {
-    color: #6948ff;
-}
-
-nav .menu li a:active {
-    color: #462faf;
-}
-
-
-/* ----- Side Bar ------ */
-
-.side-bar {
-    position: fixed;
-    right: 20px;
-    padding: 48vh 0;
-}
-
-.side-bar .max-width {
-    padding: 0;
-}
-
-.side-menu {
-    list-style: none;
-    font-size: 40px;
-}
-
-.side-menu li {
-    padding-bottom: 20px;
-}
-
-.side-menu a {
-    text-decoration: none;
-    color: #eeeeee;
-    transition: 500ms;
-}
-
-.back-home {
-    background: #8a8a8a5d;
-    border-radius: 5px;
-}
-
-.back-home:hover {
-    background: #a8a8a85d;
-    color: #cccccc;
-}
-
-#linkedin:hover {
-    color: #0a66c2;
-}
-
-#github:hover {
-    color: #3e4247;
-}
-
-#whatsapp:hover {
-    color: #0dc143;
-}
-
-#instagram:hover {
-    color: #9e03d4;
-}
-
-
-/* ----- Home Page Section ----- */
-
-
-.home {
-    height: 100vh;
-    width: 100%;
-    font-size: 32px;
-    padding: 200px 0px;
-}
-
-.name {
-    font-size: 64px;
-}
-
-#last-text::after {
-    content: '|';
-    color: #eeeeee;
-    animation: flash 800ms infinite;
-}
-
-.home #last-text {
-    color: #6948ff;
-    margin-bottom: 48px;
-}
-
-.home a {
-    border-radius: 10px;
-    border: 2px solid #eeeeee45;
-    background-color: #6948ff;
-    color: #eeeeee;
-    font-size: 24px;
-    padding: 16px 38px;
-    transition: 500ms;
-}
-
-.home a:hover {
-    background-color: #4217ff;
-    color: #cccccc;
-}
-
-.profile-pic {
-    float: right;
-    margin-right: 48px;
-    animation: float 2s linear infinite alternate-reverse;
-    animation-fill-mode: none;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-    
-    100% {
-        transform: translateY(20px);
-    }
-}
-
-@keyframes flash {
-    from {
-        opacity: 100%;
-    }
-
-    to {
-        opacity: 0%;
-    }
-}
-
-
-/* ----- About Me Section ----- */
-
-
-.about-me {
-    display: flex;
-    height: 100vh;
-    background-color: #303030;
-    padding: 80px 0;
-}
-
-.about-me h1 {
-    text-align: center;
-    padding-top: 80px;
-}
-
-.about-me-content {
-    padding: 30px 0;
-    display: grid;
-    grid-template-columns: 40% 60%;
-}
-
-.notebook-screen {
-    padding: 0 30px;
-}
-
-.notebook {
-    position: absolute;
-}
-
-.gif {
-    height: 120px;
-    width: 200px;
-    margin: 10px 0px 10px 25px;
-}
-
-.about-me p {
-    margin-bottom: 30px;
-}
-
-.about-me span {
-    color: #2d6cc4;
-}
-
-.about-me a {
-    border-radius: 10px;
-    border: 2px solid #eeeeee45;
-    color: #eeeeee;
-    font-size: 24px;
-    padding: 16px 38px;
-    transition: 500ms;
-}
-
-.about-me a:hover {
-    background-color: #96969646;
-    color: #FFFFFF;
-}
-
-
-/* ----- My Projects Section ----- */
-
-
-.my-projects {
-    height: 100vh;
-    padding: 80px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.my-projects h1 {
-    padding: 30px 0 0;
-}
-
-.github {
-    text-align: center;
-}
-
-.github ion-icon {
-    padding: 0 10px;
-}
-
-.github a {
-    color: #eeeeee;
-    font-size: 22px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-items: center;
-    transition: 500ms;
-}
-
-.github a:hover {
-    color: #6948ff;
-}
-
-
-/* ----- My Projects Gallery ----- */
-
-
-.container {
-    position: relative;
-    padding: 40px;
-    width: 800px;
-    margin: 0 auto;
-}
-
-.arrow-left, .arrow-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    cursor: pointer;
-    font-size: 32px;
-    color: #eeeeee;
-    background: transparent;
-    border: none;
-    opacity: 0.1;
-    transition: 600ms ease-in-out;
-}
-
-.arrow-right {
-    left: auto;
-    right: 0;
-    background: transparent;
-}
-
-.arrow-left:hover,
-.arrow-right:hover {
-    opacity: 1;
-}    
-
-.gallery-wrapper {
-    overflow-x: auto;
-    border-radius: 15px;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.gallery-wrapper::-webkit-scrollbar {
-    display: none;
-}
-
-.gallery {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 30px;
-}
-
-.gallery img {
-    transition: 1s;
-}
-
-.gallery img:hover {
-    opacity: 0.7;
-}
-
-
-/* ----- Professional Skills Section -----*/
-
-
-.skills {
-    height: 100vh;
-    padding: 80px 0;
-    background: #303030;
-    display: flex;
-}
-
-.skills h1 {
-    text-align: center;
-    padding: 15px 0;
-}
-
-.percentage {
-    visibility: hidden;
-    text-align: center;
-}
-
-.progress-bar {
-    visibility: hidden;
-    width: 300px;
-    height: 10px;
-    border-radius: 10px;
-    background-color: #cccccc;
-    margin: 6px auto;
-}
-
-.interior {
-    height: 100%;
-    border-radius: 10px;
-    background-color: #227900;
-    border: 1px solid #cccccc;
-}
-
-.skills-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 75px;
-    font-size: 35px;
-    padding-top: 25px;
-}
-
-.skill {
-    display: flex;
-    align-items: center;
-    opacity: 0.5;
-    transition: 1s;
-}
-
-.skill:hover {
-    opacity: 1;
-}
-
-.skills-content p {
-    padding-left: 12px;
-    cursor: pointer;
-}
-
-.skill img {
-    width: 50px;
-    transition: 1s;
-    cursor: pointer;
-}
-
-
-/* ----- Pong Game ----- */
-
-
-.pong {
-    margin-top: 50px;
-    text-decoration: none;
-}
-
-#open-pong {
-    color: #eeeeee;
-    transition: 500ms;
-}
-
-#open-pong:hover {
-    color: #6948ff;
-}
-
-#close-button {
-    display: none;
-    font-size: 30px;
-    text-decoration: none;
-    color: #eeeeee;
-    float: right;
-    margin: 20px 125px 0;
-    cursor: pointer;
-}
-
-#pong-game {
-    display: none;
-    margin: 50px auto;
-}
-
-iframe {
-    width: 630px;
-    height: 450px;
-}
-
 
 /* ----- Footer ----- */
+
 
 footer {
     height: 10vh;
@@ -511,6 +82,85 @@ footer ion-icon {
 
 @media screen and (max-width: 480px){ 
     body {
-        width: fit-content;
+        width: 250px;
+    }
+
+    .max-width {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .side-bar {
+        display: none;
+    }
+
+    .home {
+        font-size: 22px;
+        padding: 0 18px;
+        height: 70vh;
+    }
+
+    .home-text {
+        margin: 10px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .profile-pic {
+        float: none;
+        width: 200px;
+        margin: 16px;
+    }
+
+    .home a {
+        border-radius: 8px;
+        font-size: 22px;
+        padding: 10px 30px;
+        margin: 50px;
+    }
+
+    .about-me {
+        padding: 50px 0;
+    }
+
+    .about-me h1 {
+        padding: 0 50px;
+        text-align: inherit;
+    }
+
+    .about-me-content {
+        display: block;
+    }
+
+    .notebook-screen {
+        padding: 0 20px 70px;
+    }
+
+    .notebook {
+        width: 50%;
+    }
+
+    .gif {
+        width: 166px;
+        height: 105px;
+    }
+
+    .about-me p {
+        font-size: 14px;
+        padding:20px;
+        width: 250px;
+    }
+
+    .about-me a {
+        border-radius: 8px;
+        font-size: 18px;
+        padding: 12px 26px;
+        margin: 20px;
     }
 }
