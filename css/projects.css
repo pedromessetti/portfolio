@@ -1,0 +1,94 @@
+.my-projects {
+    height: 100vh;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-projects h1 {
+    padding: 30px 0 0;
+}
+
+.github {
+    text-align: center;
+}
+
+.github ion-icon {
+    padding: 0 10px;
+}
+
+.github a {
+    color: #eeeeee;
+    font-size: 22px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: 500ms;
+}
+
+.github a:hover {
+    color: #6948ff;
+}
+
+
+/* ----- Gallery ----- */
+
+
+.container {
+    position: relative;
+    padding: 40px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    cursor: pointer;
+    font-size: 32px;
+    color: #eeeeee;
+    background: transparent;
+    border: none;
+    opacity: 0.1;
+    transition: 600ms ease-in-out;
+}
+
+.arrow-right {
+    left: auto;
+    right: 0;
+    background: transparent;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    opacity: 1;
+}    
+
+.gallery-wrapper {
+    overflow-x: auto;
+    border-radius: 15px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 30px;
+}
+
+.gallery img {
+    transition: 1s;
+}
+
+.gallery img:hover {
+    opacity: 0.7;
+}

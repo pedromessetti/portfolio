@@ -1,0 +1,53 @@
+.about-me {
+    display: flex;
+    height: 100vh;
+    background-color: #303030;
+    padding: 80px 0;
+}
+
+.about-me h1 {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.about-me-content {
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.notebook-screen {
+    padding: 0 30px;
+}
+
+.notebook {
+    position: absolute;
+}
+
+.gif {
+    height: 120px;
+    width: 200px;
+    margin: 10px 0px 10px 25px;
+}
+
+.about-me p {
+    margin-bottom: 30px;
+}
+
+.about-me span {
+    color: #2d6cc4;
+}
+
+.about-me a {
+    border-radius: 10px;
+    border: 2px solid #eeeeee45;
+    color: #eeeeee;
+    font-size: 24px;
+    padding: 16px 38px;
+    transition: 500ms;
+}
+
+.about-me a:hover {
+    background-color: #96969646;
+    color: #FFFFFF;
+}

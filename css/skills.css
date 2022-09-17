@@ -1,0 +1,100 @@
+.skills {
+    height: 100vh;
+    padding: 80px 0;
+    background: #303030;
+    display: flex;
+}
+
+.skills h1 {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.percentage {
+    visibility: hidden;
+    text-align: center;
+}
+
+.progress-bar {
+    visibility: hidden;
+    width: 300px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #cccccc;
+    margin: 6px auto;
+}
+
+.interior {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #227900;
+    border: 1px solid #cccccc;
+}
+
+.skills-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 75px;
+    font-size: 35px;
+    padding-top: 25px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.skill:hover {
+    opacity: 1;
+}
+
+.skills-content p {
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+.skill img {
+    width: 50px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+/* ----- Pong Game ----- */
+
+
+.pong {
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+#open-pong {
+    color: #eeeeee;
+    transition: 500ms;
+}
+
+#open-pong:hover {
+    color: #6948ff;
+}
+
+#close-button {
+    display: none;
+    font-size: 30px;
+    text-decoration: none;
+    color: #eeeeee;
+    float: right;
+    margin: 20px 125px 0;
+    cursor: pointer;
+}
+
+#pong-game {
+    display: none;
+    margin: 50px auto;
+}
+
+iframe {
+    width: 630px;
+    height: 450px;
+}
