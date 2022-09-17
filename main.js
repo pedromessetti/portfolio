@@ -97,7 +97,7 @@ function normalTitle() {
 }
 
 
-//Open and close Pong Same
+//Open and close Pong Game
 
 
 const openPong = document.getElementById("open-pong")
