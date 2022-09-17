@@ -121,3 +121,5 @@ function closePong() {
     background.style.height = '100vh'
     openPong.innerText = '* Click here for play one of the most classic games ever'
 }
+
+console.log("Atualizei o projeto via terminal")
