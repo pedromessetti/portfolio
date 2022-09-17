@@ -9,11 +9,11 @@
 # Index
 * [Project Description](#description)
 
-* [Project Status](#barchart-status)
+* [Project Status](#bar_chart-status)
 
 * [Features](#hammer-features)
 
-* [Acess the Website](#acess-the-website)
+* [Acess the Website](#computer-acess-the-website)
 
 * [Programming Languages and Properties Used](#programming-languages-and-properties-used)
 
