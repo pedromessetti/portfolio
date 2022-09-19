@@ -78,5 +78,10 @@ header {
     .menu-link {
         padding: 1em;
         font-size: 20px;
+        transition: 500ms;
+    }
+
+    .menu-link:hover {
+        color: var(--main-blue);
     }
 }
