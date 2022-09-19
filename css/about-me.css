@@ -1,23 +1,17 @@
 .about-me {
-    display: flex;
-    height: 100vh;
-    background-color: #303030;
-    padding: 80px 0;
-}
-
-.about-me h1 {
-    text-align: center;
-    padding-top: 80px;
+    display: grid;
+    background-color: var(--secundary-background);
+    padding: 5em 1em;
 }
 
 .about-me-content {
-    padding: 30px 0;
     display: grid;
-    grid-template-columns: 40% 60%;
+    row-gap: 5em;
 }
 
 .notebook-screen {
-    padding: 0 30px;
+    margin: auto;
+    padding-right: .8em;
 }
 
 .notebook {
@@ -30,24 +24,56 @@
     margin: 10px 0px 10px 25px;
 }
 
-.about-me p {
-    margin-bottom: 30px;
+.description {
+    text-align: center;
+    color: var(--main-text);
 }
 
-.about-me span {
+.description-text {
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+
+.description-text span {
     color: #2d6cc4;
 }
 
-.about-me a {
+.download-cv {
+    font-size: 18px;
+    color: var(--main-text);
     border-radius: 10px;
-    border: 2px solid #eeeeee45;
-    color: #eeeeee;
-    font-size: 24px;
-    padding: 16px 38px;
+    border: 2px solid var(--button-border);
+    padding: .5em 1.5em;
+    text-decoration: none;
     transition: 500ms;
 }
 
-.about-me a:hover {
-    background-color: #96969646;
-    color: #FFFFFF;
+
+@media screen and (min-width:1024px) {
+    .about-me {
+        height: 100vh;
+        padding: 6em;
+    }
+
+    .about-me-content {
+        grid-template-columns: 40% 60%;
+        padding: 0 5em;
+    }
+    
+    .notebook-screen {
+        margin: 1em;
+    }
+    
+    .description {
+        text-align: left;
+    }
+
+    .download-cv {
+        font-size: 1.5em;
+    }
+
+    .download-cv:hover {
+        background-color: #96969646;
+        color: var(--white);
+    }
 }

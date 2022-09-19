@@ -1,58 +1,61 @@
 .home {
     height: 100vh;
-    width: 100%;
-    font-size: 32px;
-    padding: 200px 0px;
 }
 
-.name {
-    font-size: 64px;
-}
-
-#last-text::after {
-    content: '|';
-    color: #eeeeee;
-    animation: flash 800ms infinite;
-}
-
-.home #last-text {
-    color: #6948ff;
-    margin-bottom: 48px;
-}
-
-.home a {
-    border-radius: 10px;
-    border: 2px solid #eeeeee45;
-    background-color: #6948ff;
-    color: #eeeeee;
-    font-size: 24px;
-    padding: 16px 38px;
-    transition: 500ms;
-}
-
-.home a:hover {
-    background-color: #4217ff;
-    color: #cccccc;
+.home-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5em;
+    align-items: center;
+    padding-top: 6em;
 }
 
 .profile-pic {
-    float: right;
-    margin-right: 48px;
+    width: 60%;
+    margin: 1em;
     animation: float 2s linear infinite alternate-reverse;
     animation-fill-mode: none;
 }
 
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
+.home-text {
+    font-size: 2em;
+    text-align: center;
+    color: var(--main-text);
+}
 
-    50% {
+.name {
+    font-size: 3em;
+}
+
+#last-text {
+    color: var(--main-blue);
+}
+
+#last-text::after {
+    content: '|';
+    color: var(--main-text);
+    animation: flash 800ms infinite;
+}
+
+.linkedin-button {
+    padding: .4em 1.2em;
+    margin-top: .5em;
+    background-color: var(--main-blue);
+    color: var(--main-text);
+    font-size: 2em;
+    border-radius: 10px;
+    border: 1px solid var(--button-border);
+    text-decoration: none;
+    transition: 500ms;
+}
+
+@keyframes float {
+    from {
         transform: translateY(-20px);
     }
     
-    100% {
-        transform: translateY(20px);
+    to {
+        transform: translateY(10px);
     }
 }
 
@@ -66,3 +69,35 @@
     }
 }
 
+@media screen and (min-width:1024px) {
+    .home-content {
+        display: block;
+        padding: 12em;
+    }
+    
+    .profile-pic {
+        float: right;
+        width: auto;
+    }
+
+    .home-text {
+        text-align: left;
+    }
+
+    .name {
+        font-size: 4em;
+    }
+
+    #last-text {
+        margin-bottom: 1em;
+    }
+
+    .linkedin-button {
+        border: 2px solid var(--button-border);
+    }
+
+    .linkedin-button:hover {
+        background-color: var(--darker-blue);
+        color: var(--darker-text);
+    }
+}

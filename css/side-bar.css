@@ -1,0 +1,55 @@
+.side-bar {
+    display: none;
+}
+
+
+@media screen and (min-width:1024px) {    
+   
+    .side-bar {
+        display: block;
+        position: fixed;
+        right: 1em;
+        padding: 48vh 0;
+    }
+    
+    .side-menu {
+        list-style: none;
+        font-size: 40px;
+    }
+    
+    .side-menu li {
+        padding-bottom: 20px;
+    }
+    
+    .side-menu a {
+        text-decoration: none;
+        color: var(--main-text);
+        transition: 500ms;
+    }
+    
+    .back-home {
+        background-color: #8a8a8a5d;
+        border-radius: 5px;
+    }
+    
+    .back-home:hover {
+        background-color: #a8a8a85d;
+        color: var(--darker-text);
+    }
+    
+    #linkedin:hover {
+        color: #0a66c2;
+    }
+    
+    #github:hover {
+        color: #3e4247;
+    }
+    
+    #whatsapp:hover {
+        color: #0dc143;
+    }
+    
+    #instagram:hover {
+        color: #9e03d4;
+    }
+}

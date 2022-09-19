@@ -1,13 +1,6 @@
 .skills {
-    height: 100vh;
-    padding: 80px 0;
-    background: #303030;
-    display: flex;
-}
-
-.skills h1 {
-    text-align: center;
-    padding: 15px 0;
+    background-color: var(--secundary-background);
+    padding: 4em 1em;
 }
 
 .percentage {
@@ -17,26 +10,27 @@
 
 .progress-bar {
     visibility: hidden;
-    width: 300px;
+    margin: 6px auto;
+    width: 75%;
     height: 10px;
     border-radius: 10px;
-    background-color: #cccccc;
-    margin: 6px auto;
+    background-color: var(--darker-text);
 }
 
 .interior {
     height: 100%;
     border-radius: 10px;
     background-color: #227900;
-    border: 1px solid #cccccc;
+    border: 1px solid var(--darker-text);
 }
 
 .skills-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 75px;
-    font-size: 35px;
-    padding-top: 25px;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding-top: .8em;
+    font-size: 2em;
+    color: var(--main-text);
 }
 
 .skill {
@@ -50,8 +44,8 @@
     opacity: 1;
 }
 
-.skills-content p {
-    padding-left: 12px;
+.skill p {
+    padding-left: .8em;
     cursor: pointer;
 }
 
@@ -61,40 +55,61 @@
     cursor: pointer;
 }
 
-
-/* ----- Pong Game ----- */
-
-
 .pong {
-    margin-top: 50px;
-    text-decoration: none;
-}
-
-#open-pong {
-    color: #eeeeee;
-    transition: 500ms;
-}
-
-#open-pong:hover {
-    color: #6948ff;
-}
-
-#close-button {
     display: none;
-    font-size: 30px;
-    text-decoration: none;
-    color: #eeeeee;
-    float: right;
-    margin: 20px 125px 0;
-    cursor: pointer;
 }
 
-#pong-game {
-    display: none;
-    margin: 50px auto;
-}
+@media screen and (min-width:1024px) {
 
-iframe {
-    width: 630px;
-    height: 450px;
+    .skills {
+        height: 100vh;
+        padding: 3em 5em;
+    }
+
+    .progress-bar {
+        width: 30%;
+    }
+
+    .skills-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 75px;
+        font-size: 35px;
+        padding-top: 25px;
+    }
+
+    .pong {
+        display: block;
+        margin-top: 50px;
+    }
+    
+    #open-pong {
+        text-decoration: none;
+        color: var(--main-text);
+        transition: 500ms;
+    }
+    
+    #open-pong:hover {
+        color: var(--main-blue);
+    }
+    
+    #close-button {
+        display: none;
+        float: right;
+        margin: 20px 125px 0;
+        cursor: pointer;
+        color: var(--main-text);
+        font-size: 2em;
+        text-decoration: none;
+    }
+    
+    #pong-game {
+        display: none;
+        margin: 50px auto;
+    }
+    
+    iframe {
+        width: 630px;
+        height: 450px;
+    }   
 }

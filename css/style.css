@@ -1,30 +1,60 @@
-@import url(navegation.css);
+@import url(header.css);
+@import url(side-bar.css);
 @import url(home.css);
 @import url(about-me.css);
-@import url(projects.css);
+@import url(my-projects.css);
 @import url(skills.css);
+@import url(footer.css);
+
+body {
+    font-family: var(--main-font);
+    font-size: 16px;
+    background: var(--main-background);
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--main-text);
+    padding: 1em 0 0.5em;
+}
 
 
-/* ----- HTML, Body Tag, Titles Tag and Scrollbar -----*/
+/* ----- Variables for colors and main font*/
+
+
+:root {
+    --white: #FFFFFF;
+    --main-text: #eeeeee;
+    --darker-text: #cccccc;
+    --main-blue: #6948ff;
+    --darker-blue: #4217ff;
+    --button-border: #eeeeee45;
+    --main-background: rgb(31, 31, 31);
+    --secundary-background: #303030;
+    --header-background: #57575770;
+    --menu-background: #15191C;
+    --main-font: 'Ubuntu';
+}
+
+
+/* ----- Reset CSS for browers ----- */
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
+
 }
+
+
+/* ----- Scrollbar style and behavior ----- */
+
 
 html {
     scroll-behavior: smooth;
-}
-
-body {
-    font-size: 16px;
-    color: #eeeeee;
-    background: rgb(31, 31, 31);
-
 }
 
 ::-webkit-scrollbar {
@@ -50,117 +80,9 @@ body {
     background: #444444;
 }
 
-.title {
-    font-weight: 700;
-    font-size: 32px;
-}
-
-.max-width {
-    max-width: 1020px;
-    padding: 0 80px;
-    margin: auto;
-}
-
-
-/* ----- Footer ----- */
-
-
-footer {
-    height: 10vh;
-}
-
-footer p {
-    display: flex;
-    justify-content: center;
-    padding: 5px 20px;
-    align-items: center;
-}
-
-footer ion-icon {
-    padding-right: 10px;
-}
-
-@media screen and (max-width: 480px){ 
-    body {
-        width: 250px;
-    }
-
-    .max-width {
-        padding: 0;
-        margin: 0;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .side-bar {
-        display: none;
-    }
-
-    .home {
-        font-size: 22px;
-        padding: 0 18px;
-        height: 70vh;
-    }
-
-    .home-text {
-        margin: 10px;
-    }
-
-    .name {
-        font-size: 30px;
-    }
-
-    .profile-pic {
-        float: none;
-        width: 200px;
-        margin: 16px;
-    }
-
-    .home a {
-        border-radius: 8px;
-        font-size: 22px;
-        padding: 10px 30px;
-        margin: 50px;
-    }
-
-    .about-me {
-        padding: 50px 0;
-    }
-
-    .about-me h1 {
-        padding: 0 50px;
-        text-align: inherit;
-    }
-
-    .about-me-content {
-        display: block;
-    }
-
-    .notebook-screen {
-        padding: 0 20px 70px;
-    }
-
-    .notebook {
-        width: 50%;
-    }
-
-    .gif {
-        width: 166px;
-        height: 105px;
-    }
-
-    .about-me p {
-        font-size: 14px;
-        padding:20px;
-        width: 250px;
-    }
-
-    .about-me a {
-        border-radius: 8px;
-        font-size: 18px;
-        padding: 12px 26px;
-        margin: 20px;
+@media screen and (min-width:1024px) {
+    .title {
+        font-size: 40px;
+        padding: 1em 0 0;
     }
 }

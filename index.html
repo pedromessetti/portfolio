@@ -13,23 +13,26 @@
 </head>
 
 <body>
+    <!----- Scripts for the icons ----->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!----- Navegation Bar ----->
-    <nav>
-        <div class="max-width">
-            <div class="portfolio"><a href="#">Port<span>folio</span></a></div>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#my-projects">My Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!----- Side Bar ----->
-    <div class="side-bar">
-        <div class="max-width">
+    
+    <!----- Header ----->
+    <header>
+        <ion-icon name="reorder-four-outline" class="menu-icon"></ion-icon>
+        <a href="#" class="logo-portfolio">Port<span>folio</span></a>
+        <ul class="main-menu main-menu--active">
+            <li><a href="#home" class="menu-link">Home</a></li>
+            <li><a href="#about-me" class="menu-link">About Me</a></li>
+            <li><a href="#my-projects" class="menu-link">My Projects</a></li>
+            <li><a href="#skills" class="menu-link">Skills</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!----- Side Bar ----->
+        <div class="side-bar">
+
             <ul class="side-menu">
                 <li><a target="_blank" rel="external" id="linkedin" href="https://www.linkedin.com/in/pedro-messetti/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
                 <li><a target="_blank" rel="external" id="github" href="https://github.com/pedromessetti"><ion-icon name="logo-github"></ion-icon></a></li>
@@ -37,112 +40,117 @@
                 <li><a target="_blank" rel="external" id="instagram" href="https://www.instagram.com/pedromessetti/"><ion-icon name="logo-instagram"></ion-icon></a></li>
                 <li><a href="#home" class="back-home"><ion-icon name="chevron-up-outline"></ion-icon></a></li>
             </ul>
+
         </div>
-    </div>
-    <main>
-    <!---- Home Page Section ----->
+
+        <!---- Home Page Section ----->
         <section class="home" id="home">
-            <div class="max-width">
-                <div class="home-content">
-                    <img src="img/eu.png" alt="Pedro Messetti - Profile Picture" class="profile-pic">
-                    <p class="home-text">Hi! I am</p>
-                    <p class="home-text name">Pedro Messetti</p>
-                    <p class="home-text profession" id="last-text"></p>
-                    <a target="_blank" rel="external" href="https://www.linkedin.com/in/pedro-messetti/" class="main-text">Linkedin</a>
-                </div>
+
+            <div class="home-content">
+                <img src="img/eu.png" alt="Pedro Messetti animated picture" class="profile-pic">
+                <p class="home-text">Hi! I am</p>
+                <p class="home-text name"><b>Pedro Messetti</b></p>
+                <p class="home-text profession" id="last-text"></p>
+                <a target="_blank" rel="external" href="https://www.linkedin.com/in/pedro-messetti/" class="linkedin-button">Linkedin</a>
             </div>
+
         </section>
+
         <!----- About Me Section ----->
         <section class="about-me" id="about-me">
-            <div class="max-width">
-                <h1 class="title">About Me</h1>
-                <div class="about-me-content">
-                    <div class="notebook-screen">
-                        <img src="img/notebook.png" alt="Notebook Image" class="notebook">
-                        <img src="img/portfolio.gif" alt="" class="gif">
-                    </div> 
-                    <div class="description">
-                        <p class="description"> &lt;<span>p</span>&gt; My passion for technology started in childhood and today I can say that I am a Front-End developer with knowledge and passionate about what I do. I am a very ambitious professional, I like challenges and developing good solutions to bigger problems. I work very well in a team and I am a very organized person. I like to be in constant development, learning more about new technologies, new frameworks, databases and programming languages. I consider myself a very hardworking and dedicated person, when I go after a goal I don't stop until I reach it. For these reasons I think I will be an ideal professional for what you are looking for, after all, you came here looking for that, right? &lt;<span>/p</span>&gt;</p>
-                        <a href="downloads/CV_Pedro_Messetti.pdf" download="CV_Pedro_Messetti.pdf">Download my CV</a>
-                    </div>
+
+            <h1 class="title">About Me</h1>
+            <div class="about-me-content">
+                <div class="notebook-screen">
+                    <img src="img/notebook.png" alt="Notebook Image" class="notebook">
+                    <img src="img/portfolio.gif" alt="" class="gif">
+                </div> 
+                <div class="description">
+                    <p class="description-text"> &lt;<span>p</span>&gt; My passion for technology started in childhood and today I can say that I am a Front-End developer with knowledge and passionate about what I do. I am a very ambitious professional, I like challenges and developing good solutions to bigger problems. I work very well in a team and I am a very organized person. I like to be in constant development, learning more about new technologies, new frameworks, databases and programming languages. I consider myself a very hardworking and dedicated person, when I go after a goal I don't stop until I reach it. For these reasons I think I will be an ideal professional for what you are looking for, after all, you came here looking for that, right? &lt;<span>/p</span>&gt;</p>
+                    <a href="downloads/CV_Pedro_Messetti.pdf" download="CV_Pedro_Messetti.pdf" class="download-cv">Download my CV</a>
                 </div>
             </div>
+
         </section>
+
         <!-----My Projects Section ----->
         <section class="my-projects" id="my-projects">
-            <div class="max-width">
-                <h1 class="title">My Projects</h1>
-                <!----- Gallery ----->
-                <div class="container" id="container">
-                    <button class="arrow-left control" aria-label="Previous Image"><ion-icon name="chevron-back-outline"></ion-icon></button>
-                    <button class="arrow-right control" aria-label="Next Image"><ion-icon name="chevron-forward-outline"></ion-icon></button>
-                    <div class="gallery-wrapper">
-                        <div class="gallery">
-                            <a target="_blank" rel="external" href="https://pedromessetti.github.io/alura-plus/"><img src="img/alura-plus.jpg" alt="Home Page Alura Plus" class="item current-item"></a>
-                            <a target="_blank" rel="external" href="https://pedromessetti.github.io/carlinhos-varela-barbeiros/"><img src="img/carlinhos.jpg" alt="Home Page Carlinhos Varela Barbeiros" class="item current-item"></a>
-                            <a target="_blank" rel="external" href="https://pedromessetti.github.io/interactive-keyboard/"><img src="img/interactive-keyboard.jpg" alt="Home Page interactive Keyboard" class="item current-item"></a>
-                            <a target="_blank" rel="external" href="https://pedromessetti.github.io/robotron-2000/"><img src="img/robotron-2000.jpg" alt="Home Page Robotron 2000" class="item current-item"></a>
-                            <a href="#my-projects"><img src="img/work-in-progress.jpg" alt="Work In Progress Image" class="item current-item"></a>
-                        </div>
+
+            <h1 class="title">My Projects</h1>
+            <!----- Gallery ----->
+            <div class="container" id="container">
+                <button class="arrow-left control" aria-label="Previous Image"><ion-icon name="chevron-back-outline"></ion-icon></button>
+                <button class="arrow-right control" aria-label="Next Image"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+                <div class="gallery-wrapper">
+                    <div class="gallery">
+                        <a target="_blank" rel="external" href="https://pedromessetti.github.io/alura-plus/"><img src="img/alura-plus.jpg" alt="Home Page Alura Plus" class="item current-item"></a>
+                        <a target="_blank" rel="external" href="https://pedromessetti.github.io/carlinhos-varela-barbeiros/"><img src="img/carlinhos.jpg" alt="Home Page Carlinhos Varela Barbeiros" class="item current-item"></a>
+                        <a target="_blank" rel="external" href="https://pedromessetti.github.io/interactive-keyboard/"><img src="img/interactive-keyboard.jpg" alt="Home Page interactive Keyboard" class="item current-item"></a>
+                        <a target="_blank" rel="external" href="https://pedromessetti.github.io/robotron-2000/"><img src="img/robotron-2000.jpg" alt="Home Page Robotron 2000" class="item current-item"></a>
+                        <a href="#my-projects"><img src="img/work-in-progress.jpg" alt="Work In Progress Image" class="item current-item"></a>
                     </div>
                 </div>
-                <div class="github">
-                    <a target="_blank" rel="external" href="https://github.com/pedromessetti?tab=repositories"><ion-icon name="logo-github"></ion-icon>Check my GitHub repository</a>
-                </div>
             </div>
+            <div class="github">
+                <a target="_blank" rel="external" href="https://github.com/pedromessetti?tab=repositories" class="github-link"><ion-icon name="logo-github" class="github-icon"></ion-icon>Check my GitHub repository</a>
+            </div>
+
         </section>
+
         <!----- Professional Skills Section ----->
         <section class="skills" id="skills">
-            <div class="max-width">
-                <h1 class="title" id="title-skills">Professional Skills</h1>
-                <p class="percentage"></p>
-                <div class="progress-bar">
-                    <div class="interior"></div>
+           
+            <h1 class="title" id="title-skills">Professional Skills</h1>
+            <p class="percentage"></p>
+            <div class="progress-bar">
+                <div class="interior"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skill html">
+                    <img src="img/html5.png" alt="Logo HTML 5"><p>HTML 5</p>
                 </div>
-                <div class="skills-content">
-                    <div class="skill html">
-                        <img src="img/html5.png" alt="Logo HTML 5"><p>HTML 5</p>
-                    </div>
-                    <div class="skill css">
-                        <img src="img/css3.png" alt="Logo CSS 3"><p>CSS 3</p>
-                    </div>
-                    <div class="skill js">
-                        <img src="img/js.png" alt="Logo JavaScript"><p>JavaScript</p>
-                    </div>
-                    <div class="skill python">
-                        <img src="img/python.png" alt="Logo Python"><p>Python 3</p>
-                    </div>
-                    <div class="skill angular">
-                        <img src="img/angular.png" alt="Logo Angular"><p>Angular JS</p>
-                    </div>
-                    <div class="skill react">
-                        <img src="img/react.png" alt="Logo Reac"><p>React JS</p>
-                    </div>
-                    <div class="skill figma">
-                        <img src="img/figma.png" alt="Logo Figma"><p>Figma</p>
-                    </div>
-                    <div class="skill gimp">
-                        <img src="img/gimp.png" alt="Logo GIMP"><p>GIMP</p>
-                    </div>
-                    <div class="skill git" id="begin-pong">
-                        <img src="img/git.png" alt="Logo Git"><p>Git</p>
-                    </div>
+                <div class="skill css">
+                    <img src="img/css3.png" alt="Logo CSS 3"><p>CSS 3</p>
                 </div>
-                <!----- Pong Game ----->
-                <div class="pong">
-                    <a id="open-pong" href="#begin-pong">* Click here for play one of the most classic games ever</a>
-                    <a href="#skills"><ion-icon name="close-outline" id="close-button"></ion-icon></a>
-                    <iframe src="pong/index.html" id="pong-game" frameborder="0"></iframe>
+                <div class="skill js">
+                    <img src="img/js.png" alt="Logo JavaScript"><p>JavaScript</p>
+                </div>
+                <div class="skill python">
+                    <img src="img/python.png" alt="Logo Python"><p>Python 3</p>
+                </div>
+                <div class="skill angular">
+                    <img src="img/angular.png" alt="Logo Angular"><p>Angular JS</p>
+                </div>
+                <div class="skill react">
+                    <img src="img/react.png" alt="Logo Reac"><p>React JS</p>
+                </div>
+                <div class="skill figma">
+                    <img src="img/figma.png" alt="Logo Figma"><p>Figma</p>
+                </div>
+                <div class="skill gimp">
+                    <img src="img/gimp.png" alt="Logo GIMP"><p>GIMP</p>
+                </div>
+                <div class="skill git" id="begin-pong">
+                    <img src="img/git.png" alt="Logo Git"><p>Git</p>
                 </div>
             </div>
+            <!----- Pong Game ----->
+            <div class="pong">
+                <a id="open-pong" href="#begin-pong">* Click here for play one of the most classic games ever</a>
+                <a href="#skills"><ion-icon name="close-outline" id="close-button"></ion-icon></a>
+                <iframe src="pong/index.html" id="pong-game" frameborder="0"></iframe>
+            </div>
+
         </section>
     </main>
+
     <!----- Footer ----->
     <footer>
-        <p><ion-icon name="mail-outline"></ion-icon>pedromessetti@gmail.com</p>
-        <p><ion-icon name="call-outline"></ion-icon>+351 924 686 213</p>
-        <p>&#169; Developed by: Pedro Messetti</p>
-    </footer>
+        <p class="footer-text"><ion-icon name="mail-outline" class="footer-icon"></ion-icon>pedromessetti@gmail.com</p>
+        <p class="footer-text"><ion-icon name="call-outline" class="footer-icon"></ion-icon>+351 924 686 213</p>
+        <p class="footer-text">&#169; Developed by: Pedro Messetti</p>
+    </footer>   
+    <!----- Main Script ----->
     <script src="main.js"></script>
 </body>
 </html>

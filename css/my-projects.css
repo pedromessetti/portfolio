@@ -1,0 +1,108 @@
+.my-projects {
+    height: 100vh;
+    padding: 5em 0;
+}
+
+
+/* ----- Gallery ----- */
+
+
+.container {
+    position: relative;
+    width: 100%;
+    padding: 1em 2em;
+}
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    font-size: 32px;
+    border: none;
+    opacity: 0.1;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--main-text);
+    transition: 600ms ease-in-out;
+}
+
+.arrow-right {
+    left: auto;
+    right: 0;
+    background-color: transparent;
+}
+
+.gallery-wrapper {
+    overflow-x: auto;
+    border-radius: 15px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 30px;
+}
+
+.item {
+    transition: 1s;
+}
+
+
+/* ----- GitHub Button ----- */
+
+
+.github {
+    text-align: center;
+}
+
+.github-icon {
+    padding: 0 10px;
+}
+
+.github-link {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-decoration: none;
+    color: var(--main-text);;
+    font-size: 18px;
+    transition: 500ms;
+}
+
+
+@media screen and (min-width:1024px) {
+    .my-projects {
+        padding: 4em 0;
+    }
+    
+    .container {
+        padding: 40px;
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .github-link {
+        font-size: 24px;
+    }
+
+    .github-link:hover {
+        color: var(--main-blue);
+    }
+
+    .arrow-left:hover,
+    .arrow-right:hover {
+        opacity: 1;
+    }
+
+    .item:hover {
+        opacity: 0.7;
+    }
+}

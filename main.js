@@ -1,3 +1,14 @@
+//Show and hide menu
+
+
+const botaoMenu = document.querySelector('.menu-icon')
+const menu = document.querySelector('.main-menu')
+
+botaoMenu.addEventListener('click', () =>{
+    menu.classList.toggle('main-menu--active')
+})
+
+
 //Writing Front-End Developer in the Home Page
 
 const profession = document.querySelector(".profession")

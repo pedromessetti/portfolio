@@ -1,0 +1,11 @@
+.footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    color: var(--main-text);
+}
+
+.footer-icon {
+    padding-right: 10px;
+}
