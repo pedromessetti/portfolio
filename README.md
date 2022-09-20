@@ -1,12 +1,14 @@
 ![Logo Portfolio](/img/logo-portfolio.png)
 <hr>
 
-![Badge Version](https://img.shields.io/static/v1?label=STATUS&message=%20V1.1&color=GREEN&style=for-the-badge)
+![Badge Version](https://img.shields.io/static/v1?label=version&message=%201.1&color=GREEN&style=for-the-badge)
 ![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/eslint/eslint?style=for-the-badge)
 ![GitHub Gist Last Commit](https://img.shields.io/github-gist/last-commit/8710649?style=for-the-badge)
 ![GitHub File Count](https://img.shields.io/github/directory-file-count/badges/shields?style=for-the-badge)
 
 # Index
+* [Index](#index)
+
 * [Project Description](#description)
 
 * [Project Status](#bar_chart-status)
